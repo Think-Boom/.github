@@ -32,7 +32,7 @@ BrainWriting
 🎩 SixHat
 
 
-화면 설계서
+서비스 아키텍쳐
 ---
 
 
