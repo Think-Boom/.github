@@ -34,5 +34,6 @@ BrainWriting
 
 서비스 아키텍쳐
 ---
+![서비스 아키텍쳐](https://user-images.githubusercontent.com/97424544/162121668-3c45183f-4146-444c-8962-ccfc9f8fa666.png)
 
 
