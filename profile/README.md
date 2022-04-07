@@ -1,2 +1,2 @@
 # .github
-# test
+![띵킹붐로고_완_1 (1) (1)](https://user-images.githubusercontent.com/97424544/162109937-28746a8d-2845-497e-9d3e-2d32c6c8238a.png)
