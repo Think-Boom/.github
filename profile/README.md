@@ -31,6 +31,10 @@ BrainWriting
 
 🎩 SixHat
 
+API 설계
+---
+추가 
+
 시연 영상
 ------
 동영상 링크 추가 
