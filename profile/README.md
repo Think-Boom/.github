@@ -48,7 +48,6 @@
 
 </div>
 </details>
-
 <br>
 
 ### 🧠 BrainWriting
@@ -104,8 +103,8 @@
 
 </div>
 </details>
+<br>
 
-<br><br>
 ## API 설계
 추가  
 
