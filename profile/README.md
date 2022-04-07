@@ -20,3 +20,10 @@
 |최원준|백엔드|
 |강경지|디자이너|
 |김정현|디자이너|
+
+
+핵심 기능
+---
+*RandomWord
+*BrainWriting
+*SixHat
