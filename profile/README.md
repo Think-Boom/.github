@@ -24,6 +24,6 @@
 
 핵심 기능
 ---
-* RandomWord
+:question: RandomWord
 * BrainWriting
 * SixHat
