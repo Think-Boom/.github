@@ -23,7 +23,7 @@
 |김정현|디자이너|
 
 
-핵심 기능
+# 핵심 기능
 
 
 ## :question: RandomWord
