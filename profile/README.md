@@ -84,29 +84,56 @@
 <br>
 
 ## API 설계
+### RandomWord
 |기능|Method|URL|
 |:---|:---:|:---:|
 |무작위단어 불러오기|GET|/randomWord|
 |단어리스트 저장|POST|/randomWord|
 |RandomWord 공개여부설정|PATCH|/randomWord/share/{rwId}|
+<br>
+
+### BrainWriting
+|기능|Method|URL|
+|:---|:---:|:---:|
 |소켓연결|GET|/websocket|
-|BrainWriting 방생성|POST|/api/brainWriting/rooms|
-|BrainWriting 닉네임 입력|POST|/api/brainWriting/user/nickname|
-|BrainWriting 채팅방 구독|socket|/sub/api/brainWriting/rooms/{bwRoomId}|
-|BrainWriting 채팅 입력|socket|/pub/api/brainWriting/chat/message|
-|BrainWriting 카드 생성(준비)|POST|/api/brainWriting/idea/create/{bwroomId}|
-|BrainWriting 아이디어 입력|PATCH|/api/brainWriting/Idea/{bwRoomId}|
-|BrainWriting 아이디어 받기|GET|/api/brainwriting/idea/{bwroomid}|
-|BrainWriting 코멘트입력|POST|/api/brainwriting/comment/{bwroomId}|
-|BrainWriting 투표 뷰|GET|/api/brainwriting/voteview/{bwroomId}|
-|BrainWriting 튜표하기|PATCH|/api/brainWriting/vote/{bwRoomId}|
-|BrainWriting 공유여부|PATCH|/api/brainWiting/sharing/{bwRoomId}|
+|BrainWriting 방생성|POST|/api/brainwriting/rooms|
+|BrainWriting 닉네임 입력|POST|/api/brainwriting/user/nickname|
+|BrainWriting 채팅방 구독|socket|/sub/api/brainwriting/rooms/{bwRoomid}|
+|BrainWriting 채팅 입력|socket|/pub/api/brainwriting/chat/message|
+|BrainWriting 카드 생성(준비)|POST|/api/brainwriting/idea/{bwroomid}|
+|BrainWriting 아이디어 입력|PATCH|/api/brainwriting/idea/{bwRoomid}|
+|BrainWriting 아이디어 받기|GET|/api/brainwriting/idea/{bwroomid}?userId=Long|
+|BrainWriting 코멘트입력|POST|/api/brainwriting/comment/{bwroomid}|
+|BrainWriting 투표 뷰|GET|/api/brainwriting/voteview/{bwroomid}|
+|BrainWriting 튜표하기|PATCH|/api/brainwriting/vote/{bwroomid}|
+|BrainWriting 공유여부|PATCH|/api/brainwiting/sharing/{bwroomid}|
 |BrainWriting 아이디어 및 코멘트 작성 시간 갱신하기|PATCH|/api/brainwriting/timer/{bwroomid}|
 |BrainWriting 투표 시간 갱신하기|PATCH|/api/brainwriting/vote/timer/{bwroomid}|
 |BrainWriting 남은 시간 전달|GET|/api/brainwriting/timer/{bwroomid}|
 |BrainWriting Gallery에 저장|POST|/api/brainwriting/gallery/save/{bwroomid}|
+<br>
 
+### SixHat
+|기능|Method|URL|
+|:---|:---:|:---:|
+|SixHat 방생성|POST|/api/sixHat/rooms|
+|SixHat 닉네임 입력|POST|/api/sixHat/user/nickname|
+|SixHat 채팅방 구독|socket|/subSH/api/sixHat/rooms/{shroomId}|
+|SixHat 채팅 입력|socket|/pubSH/api/sixHat/chat/message|
+|SixHat 공유 여부|POST|/api/sixHat/sharing/{shroomid}|
+|SixHat 남은 시간 주기|GET|/api/sixHat/timer/{shroomid}|
+|SixHat 시간 갱신하기|POST|/api/siHat/timer/{shRoomId}|
+|Gallery에 저장|POST|/api/sixHat/save/gallery/{shRoomId}|
+|SixHat 결과|GET|/api/gallery/sixhat/{shroomid}|
+<br>
 
+### Gallery
+|기능|Method|URL|
+|:---|:---:|:---:|
+|갤러리 메인페이지 데이터|GET|/api/gallery?page={page}&size={갯수}|
+|랜덤워드 갤러리 상세 데이터|GET|/api/gallery/randomword/{rwid}|
+|브레인 라이팅 갤러리 상세 데이터|GET|/api/gallery/brainwriting/{bwroomid}|
+|식스햇 갤러리 상세 데이터|GET|/api/gallery/sixhat/{shroomid}|
 
 <br><br>
 ## 시연 영상
