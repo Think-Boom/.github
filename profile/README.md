@@ -85,7 +85,7 @@
 
 ## API 설계
 |기능|Method|URL|
-|:---:|:---:|:---:|
+|:---|:---:|:---:|
 |무작위단어 불러오기|GET|/randomWord|
 |단어리스트 저장|POST|/randomWord|
 |RandomWord 공개여부설정|PATCH|/randomWord/share/{rwId}|
@@ -96,7 +96,15 @@
 |BrainWriting 채팅 입력|socket|/pub/api/brainWriting/chat/message|
 |BrainWriting 카드 생성(준비)|POST|/api/brainWriting/idea/create/{bwroomId}|
 |BrainWriting 아이디어 입력|PATCH|/api/brainWriting/Idea/{bwRoomId}|
-
+|BrainWriting 아이디어 받기|GET|/api/brainwriting/idea/{bwroomid}|
+|BrainWriting 코멘트입력|POST|/api/brainwriting/comment/{bwroomId}|
+|BrainWriting 투표 뷰|GET|/api/brainwriting/voteview/{bwroomId}|
+|BrainWriting 튜표하기|PATCH|/api/brainWriting/vote/{bwRoomId}|
+|BrainWriting 공유여부|PATCH|/api/brainWiting/sharing/{bwRoomId}|
+|BrainWriting 아이디어 및 코멘트 작성 시간 갱신하기|PATCH|/api/brainwriting/timer/{bwroomid}|
+|BrainWriting 투표 시간 갱신하기|PATCH|/api/brainwriting/vote/timer/{bwroomid}|
+|BrainWriting 남은 시간 전달|GET|/api/brainwriting/timer/{bwroomid}|
+|BrainWriting Gallery에 저장|POST|/api/brainwriting/gallery/save/{bwroomid}|
 
 
 
