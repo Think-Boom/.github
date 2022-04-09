@@ -84,7 +84,21 @@
 <br>
 
 ## API 설계
-추가  
+|기능|Method|URL|
+|:---:|:---:|:---:|
+|무작위단어 불러오기|GET|/randomWord|
+|단어리스트 저장|POST|/randomWord|
+|RandomWord 공개여부설정|PATCH|/randomWord/share/{rwId}|
+|소켓연결|GET|/websocket|
+|BrainWriting 방생성|POST|/api/brainWriting/rooms|
+|BrainWriting 닉네임 입력|POST|/api/brainWriting/user/nickname|
+|BrainWriting 채팅방 구독|socket|/sub/api/brainWriting/rooms/{bwRoomId}|
+|BrainWriting 채팅 입력|socket|/pub/api/brainWriting/chat/message|
+|BrainWriting 카드 생성(준비)|POST|/api/brainWriting/idea/create/{bwroomId}|
+|BrainWriting 아이디어 입력|PATCH|/api/brainWriting/Idea/{bwRoomId}|
+
+
+
 
 <br><br>
 ## 시연 영상
