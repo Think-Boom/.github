@@ -10,6 +10,9 @@
 ------
 2022년 02월 25일 부터 2022년 04 13일
 <br><br>
+BackEnd GIT : https://github.com/Think-Boom/ThinkBoom-BE
+<br>
+FrontEnd GIT : https://github.com/Think-Boom/ThinkBoom-FE
 
 팀 구성
 ----
